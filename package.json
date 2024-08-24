@@ -24,7 +24,8 @@
     "react-native": "0.74.5",
     "tailwind-merge": "^2.5.2",
     "typescript": "~5.3.3",
-    "react-native-svg": "15.2.0"
+    "react-native-svg": "15.2.0",
+    "react-native-reanimated": "~3.10.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
