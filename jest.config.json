@@ -1,0 +1,18 @@
+{
+  "preset": "jest-expo",
+  "verbose": true,
+  "globals": {
+    "__DEV__": true
+  },
+  "notify": true,
+  "coverageDirectory": "__tests__/coverage",
+  "collectCoverage": false,
+  "collectCoverageFrom": ["**/{src,app}/**/*.spec.{tsx,ts}"],
+  "testMatch": ["**/{src,app}/**/*.spec.{tsx,ts}"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg)"
+  ],
+  "moduleNameMapper": {
+    "\\.svg$": "<rootDir>/__tests__/__mocks__/svgMock.js"
+  }
+}
