@@ -49,7 +49,7 @@ const Input = forwardRef<TextInput, InputProps>((props, ref) => {
       status={isFocused ? 'focus' : props.status}
       onPress={handlePressWrapper}
     >
-      {leftIcon && <InputIcon {...leftIcon} />}
+      {leftIcon && <InputIcon testID="input-icon-left" {...leftIcon} />}
 
       <Field
         ref={inputRef}
@@ -64,7 +64,7 @@ const Input = forwardRef<TextInput, InputProps>((props, ref) => {
         }}
       />
 
-      {rightIcon && <InputIcon {...rightIcon} />}
+      {rightIcon && <InputIcon testID="input-icon-right" {...rightIcon} />}
     </InputRoot>
   )
 })

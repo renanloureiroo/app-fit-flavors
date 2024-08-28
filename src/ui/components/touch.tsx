@@ -17,6 +17,7 @@ const Touch = ({ onPressIn, onPressOut, ...rest }: TouchProps) => {
 
   return (
     <Pressable
+      testID="touch"
       className={cn(isPressed && 'opacity-70')}
       {...rest}
       onPressIn={(e) => {
