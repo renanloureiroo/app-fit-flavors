@@ -13,6 +13,7 @@ type InputRootProps = TouchProps & {
 const InputRoot = ({ children, status = 'default' }: InputRootProps) => {
   return (
     <Touch
+      testID="input-root"
       className={cn(
         'border border-grey-100 rounded-lg px-4 w-full flex items-center justify-center flex-row h-14 opacity-100',
         status === 'focus' && 'border-brand-primary-400',
